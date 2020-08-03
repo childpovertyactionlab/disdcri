@@ -8,10 +8,10 @@ It is our hope that the CRI be used by local governments, nonprofit and philanth
 
 The rest of this document outlines the data, methods, and results of the Community Resource Index, as well as forthcoming changes we wish to tackle in the coming months. 
 
-##Data
+## Data
 
-##Methods
+## Methods
 
-##Results
+## Results
 
-##Future Improvements
+## Future Improvements

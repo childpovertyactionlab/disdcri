@@ -1,0 +1,190 @@
+OBJECTID,TEA,SLN,SCHOOLNAME,LEVEL,ADDRESS,CITY,ZIP,PHONE,WEBSITE,POINT_X,POINT_Y,MasterID,Feeder,HIGH_SLN
+1,47,47,Franklin International Exploratory Academy Middle School,Middle,6920 Meadow Rd.,Dallas,75230,9725027100,http://www.dallasisd.org/franklin,-96.78454417,32.88553957,'057905047,Hillcrest,6
+2,69,69,Seagoville Middle School,Middle,950 Woody Rd.,Dallas,75253,9728927100,http://www.dallasisd.org/seagovillems,-96.58334471,32.68191098,'057905069,Seagoville,15
+3,354,354,Kennedy-Curry Middle School,Middle,6605 Sebring Dr.,Dallas,75241,9729251600,http://www.dallasisd.org/kennedycurry,-96.75786656,32.66095638,'057905354,Wilmer-Hutchins,380
+4,62,62,Dade Middle School,Middle,2727 Grand Ave.,Dallas,75215,9727493800,http://www.dallasisd.org/dade,-96.77341356,32.77121228,'057905062,Madison,32
+5,76,76,Lang Sr. Middle School,Middle,1678 Chenault St.,Dallas,75228,9729252400,http://www.dallasisd.org/lang,-96.68679803,32.80176309,'057905076,Skyline,25
+6,353,353,Richards STEAM Academy Middle School,Middle,3831 N. Prairie Creek Rd.,Dallas,75227,9728925400,http://www.dallasisd.org/annrichards,-96.66629604,32.77002209,'057905353,Skyline,25
+7,53,53,Long Middle School,Middle,6116 Reiger Ave.,Dallas,75214,9725024700,http://www.dallasisd.org/long,-96.75029681,32.80694386,'057905053,Wilson,22
+8,55,55,Rusk Middle School,Middle,2929 Inwood Rd.,Dallas,75235,9729252000,http://www.dallasisd.org/rusk,-96.83487183,32.82671808,'057905055,North Dallas,24
+9,79,79,Medrano Middle School,Middle,9815 Brockbank Dr,Dallas,75220,9729251300,http://www.dallasisd.org/panchomedrano,-96.87636135,32.87256123,'057905079,Jefferson,7
+10,77,77,Garcia Middle School,Middle,700 E. Eighth St.,Dallas,75203,9725025500,http://www.dallasisd.org/garcia,-96.81388591,32.74985591,'057905077,Adamson,2
+11,68,68,Quintanilla Sr. Middle School,Middle,2700 Remond Dr.,Dallas,75211,9725023200,http://www.dallasisd.org/quintanilla,-96.86566636,32.76196999,'057905068,Pinkston,12
+12,59,59,Stockard Middle School,Middle,2300 S. Ravinia Dr.,Dallas,75211,9727945700,http://www.dallasisd.org/stockard,-96.86730849,32.72280038,'057905059,Molina,5
+13,48,48,Gaston Middle School,Middle,9565 Mercer Dr.,Dallas,75228,9725025400,http://www.dallasisd.org/gaston,-96.69408557,32.82476871,'057905048,Adams,1
+14,50,50,Hill Middle School,Middle,505 Easton Rd.,Dallas,75218,9725025700,http://www.dallasisd.org/hill,-96.70414493,32.85544612,'057905050,Adams,1
+15,72,72,Zumwalt Middle School,Middle,2445 E. Ledbetter Dr.,Dallas,75216,9727493600,http://www.dallasisd.org/zumwalt,-96.78254939,32.69131048,'057905072,SOC,16
+16,43,43,Browne Middle School,Middle,3333 Sprague Dr.,Dallas,75233,9725052500,http://www.dallasisd.org/browne,-96.87628509,32.69681812,'057905043,Kimball,8
+17,100,100,Holmes Jr. Middle School,Middle,2939 St. Rita Dr.,Dallas,75233,2149327800,http://www.dallasisd.org/zwholmes,-96.86848385,32.71094913,'057905100,Kimball,8
+18,284,284,Highland Meadows Elementary School,Elementary,8939 Whitewing Lane,Dallas,75238,9725025200,http://www.dallasisd.org/hmeadows,-96.68785493,32.8705869,'057905284,Conrad,28
+19,280,280,Frank Elementary School,Elementary,5201 Celestial Rd.,Dallas,75254,9725025900,http://www.dallasisd.org/frank,-96.81790826,32.94775852,'057905280,Hillcrest,6
+20,169,169,Kramer Elementary School,Elementary,7131 Midbury Dr.,Dallas,75230,9727948300,http://www.dallasisd.org/kramer,-96.78327495,32.90221796,'057905169,Hillcrest,6
+21,167,167,Kleberg Elementary School,Elementary,1450 Edd Rd.,Dallas,75253,9727496500,http://www.dallasisd.org/kleberg,-96.60049237,32.68434393,'057905167,Seagoville,15
+22,187,187,Moseley Elementary School,Elementary,10400 Rylie Rd.,Dallas,75217,9727496700,http://www.dallasisd.org/moseley,-96.6423473,32.68935608,'057905187,Spruce,17
+23,305,305,Halliday Elementary School,Elementary,10210 Teagarden Rd.,Dallas,75217,9729251800,http://www.dallasisd.org/ebbyhalliday,-96.6470033,32.67269409,'057905305,Seagoville,15
+24,142,142,Ervin Elementary School,Elementary,3722 Black Oak Dr.,Dallas,75241,9727493700,http://www.dallasisd.org/ervin,-96.76222554,32.67964113,'057905142,Wilmer-Hutchins,380
+25,301,301,Wilmer-Hutchins Elementary School,Elementary,7475 J.J. Lemmon Rd.,Dallas,75241,9729252600,http://www.dallasisd.org/wilmerhutchinses,-96.72769528,32.65418876,'057905301,Wilmer-Hutchins,380
+26,235,235,Alexander Elementary School,Elementary,1830 Goldwood Dr.,Dallas,75232,9727493100,http://www.dallasisd.org/alexander,-96.84764344,32.65600928,'057905235,Carter,23
+27,175,175,U. Lee Elementary School,Elementary,7808 Racine Dr.,Dallas,75232,9727493900,http://www.dallasisd.org/ulee,-96.83546657,32.65277236,'057905175,Carter,23
+28,264,264,McNair Elementary School,Elementary,3150 Bainbridge Ave.,Dallas,75237,9727946200,http://www.dallasisd.org/mcnair,-96.86327079,32.65617942,'057905264,Carter,23
+29,226,226,Weiss Elementary School,Elementary,8601 Willoughby Blvd.,Dallas,75232,9727494000,http://www.dallasisd.org/weiss,-96.83046939,32.64382799,'057905226,Carter,23
+30,109,109,Blair Elementary School,Elementary,7720 Gayglen Dr.,Dallas,75217,9727941600,http://www.dallasisd.org/blair,-96.68872096,32.70874949,'057905109,Spruce,17
+31,117,117,Burleson Elementary School,Elementary,6300 Elam Rd.,Dallas,75217,9727494500,http://www.dallasisd.org/burleson,-96.71317289,32.7187234,'057905117,Spruce,17
+32,266,266,Douglass Elementary School,Elementary,226 N. Jim Miller Rd.,Dallas,75217,9727941400,http://www.dallasisd.org/douglas,-96.69750014,32.715607,'057905266,Spruce,17
+33,108,108,Bayles Elementary School,Elementary,2444 Telegraph Ave.,Dallas,75228,9727498900,http://www.dallasisd.org/bayles,-96.70605338,32.8010691,'057905108,Adams,1
+34,129,129,Conner Elementary School,Elementary,3037 Greenmeadow Dr.,Dallas,75228,9727498200,http://www.dallasisd.org/conner,-96.69475098,32.80824293,'057905129,Skyline,25
+35,218,218,Truett Elementary School,Elementary,1811 Gross Rd.,Dallas,75228,9727498000,http://www.dallasisd.org/truett,-96.68349102,32.81642912,'057905218,Skyline,25
+36,216,216,Titche Elementary School,Elementary,9560 Highfield Dr.,Dallas,75227,9727942100,http://www.dallasisd.org/titche,-96.65855703,32.75476245,'057905216,Samuell,14
+37,139,139,Dunbar Learning Center,Elementary,4200 Metropolitan Ave.,Dallas,75210,9727946600,http://www.dallasisd.org/dunbar,-96.74920121,32.77482727,'057905139,Madison,32
+38,240,240,Guzick Elementary School,Elementary,5000 Berridge Ln,Dallas,75227,9725023900,http://www.dallasisd.org/guzick,-96.69273539,32.78472564,'057905240,Skyline,25
+39,128,128,King Jr. Learning Center,Elementary,1817 Warren Ave.,Dallas,75215,9725028100,http://www.dallasisd.org/mlk,-96.77349716,32.76100571,'057905128,Madison,32
+40,200,200,Rhoads Learning Center,Elementary,4401 Second Ave.,Dallas,75210,9727491000,http://www.dallasisd.org/rhoads,-96.74872774,32.7634209,'057905200,Lincoln,9
+41,201,201,Rice Learning Center,Elementary,2425 Pine St.,Dallas,75215,9727491100,http://www.dallasisd.org/rice,-96.7621251,32.75648937,'057905201,Lincoln,9
+42,232,232,Rowe Elementary School,Elementary,4918 Hovenkamp Dr.,Dallas,75227,9727498000,http://www.dallasisd.org/rowe,-96.70673618,32.78543679,'057905232,Skyline,25
+43,209,209,Silberstein Elementary School,Elementary,5940 Hollis Ave.,Dallas,75227,9727941900,http://www.dallasisd.org/silberstein,-96.72052825,32.76720471,'057905209,Skyline,25
+44,155,155,Tatum Jr. Elementary School,Elementary,3002 N. St. Augustine Rd.,Dallas,75227,9725022000,http://www.dallasisd.org/tatum,-96.65553633,32.763373,'057905155,Skyline,25
+45,247,247,Callejo Elementary School,Elementary,7817 Military Pkwy,Dallas,75227,9728925700,http://www.dallasisd.org/callejo,-96.68666861,32.77139754,'057905247,Skyline,25
+46,162,162,Mockingbird Elementary School,Elementary,5828 E. Mockingbird Lane,Dallas,75206,9727497200,http://www.dallasisd.org/mockingbird,-96.76734035,32.83562313,'057905162,Wilson,22
+47,174,174,Geneva Heights Elementary School,Elementary,2911 Delmar Ave.,Dallas,75206,9727497400,http://www.dallasisd.org/genevaheights,-96.76636546,32.82416138,'057905174,Wilson,22
+48,177,177,Lipscomb Elementary School,Elementary,5801 Worth St.,Dallas,75214,9727947300,http://www.dallasisd.org/lipscomb,-96.75702231,32.80716173,'057905177,Wilson,22
+49,184,184,Milam Elementary School,Elementary,4200 McKinney Ave.,Dallas,75205,9727495600,http://www.dallasisd.org/milam,-96.79015005,32.81637614,'057905184,North Dallas,24
+50,203,203,Rogers Elementary School,Elementary,5314 Abrams Rd.,Dallas,75214,9727948800,http://www.dallasisd.org/rogers,-96.75169716,32.85205256,'057905203,Hillcrest,6
+51,281,281,Chavez Learning Center,Elementary,1710 N. Carroll,Dallas,75204,9729251000,http://www.dallasisd.org/chavez,-96.78056439,32.80372416,'057905281,North Dallas,24
+52,145,145,Foster Elementary School,Elementary,3700 Clover Lane,Dallas,75220,9727948100,http://www.dallasisd.org/foster,-96.85376516,32.86996983,'057905145,Jefferson,7
+53,168,168,Knight Elementary School,Elementary,2615 Anson Rd.,Dallas,75235,9727495300,http://www.dallasisd.org/knight,-96.85181791,32.83686461,'057905168,North Dallas,24
+54,181,181,Maple Lawn Elementary School,Elementary,3120 Inwood Rd.,Dallas,75235,9729252500,http://www.dallasisd.org/maplelawn,-96.82985703,32.82588427,'057905181,North Dallas,24
+55,283,283,Medrano Elementary School,Elementary,2221 Lucas Dr.,Dallas,75219,9727943300,http://www.dallasisd.org/hopemedrano,-96.82713676,32.80863285,'057905283,North Dallas,24
+56,188,188,Mount Auburn STEAM Academy Elementary School,Elementary,6012 E. Grand Ave.,Dallas,75223,9727498500,http://www.dallasisd.org/mountauburn,-96.74402702,32.79583042,'057905188,Wilson,22
+57,202,202,Roberts Elementary School,Elementary,4919 E. Grand Ave.,Dallas,75223,9727498700,http://www.dallasisd.org/oranroberts,-96.75421064,32.7884957,'057905202,Madison,32
+58,131,131,Zaragoza Elementary School,Elementary,4550 Worth St.,Dallas,75246,9727498600,http://www.dallasisd.org/zaragoza,-96.77086617,32.79515424,'057905131,North Dallas,24
+59,122,122,Carr Elementary School,Elementary,1952 Bayside St.,Dallas,75212,9727944300,http://www.dallasisd.org/carr,-96.85273658,32.7878757,'057905122,Pinkston,12
+60,260,260,De Zavala Elementary School,Elementary,3214 N. Winnetka Ave.,Dallas,75212,9728926400,http://www.dallasisd.org/dezavala,-96.83905037,32.78110303,'057905260,Pinkston,12
+61,105,105,Arcadia Park Elementary School,Elementary,1300 N. Justin Ave.,Dallas,75211,9725025300,http://www.dallasisd.org/arcadiapark,-96.91052995,32.75939794,'057905105,Pinkston,12
+62,103,103,Allen Charter School,Elementary,5220 Nomas St.,Dallas,75212,9727945100,http://www.dallasisd.org/allen,-96.90755939,32.78151298,'057905103,Pinkston,12
+63,116,116,Burnet Elementary School,Elementary,3200 Kinkaid Dr.,Dallas,75220,9727943000,http://www.dallasisd.org/burnet,-96.86841769,32.87644779,'057905116,Jefferson,7
+64,278,278,Cigarroa Elementary School,Elementary,9990 Webb Chapel Rd,Dallas,75220,9725022900,http://www.dallasisd.org/cigarroa,-96.86474879,32.88002614,'057905278,Jefferson,7
+65,265,265,Martinez Learning Center,Elementary,4500 Bernal Dr.,Dallas,75212,9727946900,http://www.dallasisd.org/martinez,-96.89369491,32.78678071,'057905265,Pinkston,12
+66,271,271,Saldivar Elementary School,Elementary,9510 Brockbank Dr.,Dallas,75220,9727942000,http://www.dallasisd.org/saldivar,-96.87281138,32.86476868,'057905271,Jefferson,7
+67,272,272,Moreno Elementary School,Elementary,2115 S. Hampton Rd.,Dallas,75224,9725023100,http://www.dallasisd.org/moreno,-96.85810526,32.72396465,'057905272,Kimball,8
+68,289,289,Botello Elementary School,Elementary,225 S. Marsalis Ave.,Dallas,75203,2149325179,http://www.dallasisd.org/botello,-96.81640976,32.74562788,'057905289,Adamson,2
+69,112,112,Bowie Elementary School,Elementary,330 N. Marsalis Ave.,Dallas,75203,9729256600,http://www.dallasisd.org/bowie,-96.81485594,32.75235824,'057905112,Adamson,2
+70,130,130,Cowart Elementary School,Elementary,1515 S. Ravinia,Dallas,75211,9727945500,http://www.dallasisd.org/cowart,-96.86992516,32.72800453,'057905130,Molina,5
+71,136,136,Donald Elementary School,Elementary,1218 Phinney Ave.,Dallas,75211,9727945300,http://www.dallasisd.org/donald,-96.88707251,32.73251662,'057905136,Kimball,8
+72,149,149,Hall Elementary School,Elementary,2120 Keats Dr.,Dallas,75211,9727945400,http://www.dallasisd.org/hall,-96.88125303,32.72173546,'057905149,Kimball,8
+73,152,152,Henderson Elementary School,Elementary,2200 S. Edgefield St.,Dallas,75224,9727492900,http://www.dallasisd.org/henderson,-96.84391019,32.72396847,'057905152,Kimball,8
+74,157,157,Hogg Elementary School,Elementary,1144 N. Madison Ave.,Dallas,75208,9725028600,http://www.dallasisd.org/hogg,-96.82507455,32.75687386,'057905157,Adamson,2
+75,158,158,Hooe Elementary School,Elementary,2419 Gladstone Dr.,Dallas,75211,9727946700,http://www.dallasisd.org/hooe,-96.85745002,32.74074893,'057905158,Sunset,18
+76,275,275,Kahn Elementary School,Elementary,610 N. Franklin St.,Dallas,75211,9725021400,http://www.dallasisd.org/kahn,-96.85984185,32.75127894,'057905275,Sunset,18
+77,190,190,Peabody Elementary School,Elementary,3101 Raydell Place,Dallas,75211,9727945200,http://www.dallasisd.org/peabody,-96.87294286,32.7428548,'057905190,Sunset,18
+78,192,192,Peeler Elementary School,Elementary,810 S. Llewellyn Ave.,Dallas,75208,9725028300,http://www.dallasisd.org/peeler,-96.83117977,32.73806156,'057905192,Adamson,2
+79,197,197,Reagan Elementary School,Elementary,201 N. Adams Ave.,Dallas,75208,9725028200,http://www.dallasisd.org/reagan,-96.83114496,32.74683512,'057905197,Adamson,2
+80,204,204,Rosemont Lower,Elementary,1919 Stevens Forest Dr.,Dallas,75208,9727495000,http://www.dallasisd.org/rosemont,-96.85048642,32.75269208,'057905204,Sunset,18
+81,239,239,Salazar Elementary School,Elementary,1120 S. Ravinia Dr.,Dallas,75211,9725021800,http://www.dallasisd.org/salazar,-96.86802568,32.73280556,'057905239,Molina,5
+82,211,211,Stevens Park Elementary School,Elementary,2615 W. Colorado Blvd.,Dallas,75211,9727944200,http://www.dallasisd.org/stevenspark,-96.86487729,32.76074634,'057905211,Pinkston,12
+83,229,229,Winnetka Elementary School,Elementary,1151 S. Edgefield Ave.,Dallas,75208,9727495100,http://www.dallasisd.org/winnetka,-96.84523621,32.734395,'057905229,Sunset,18
+84,171,171,Lakewood Elementary School,Elementary,3000 Hillbrook St.,Dallas,75214,9727497300,http://www.dallasisd.org/lakewood,-96.74374317,32.82575749,'057905171,Wilson,22
+85,125,125,Casa View Elementary School,Elementary,2100 N. Farola Dr.,Dallas,75228,9727497700,http://www.dallasisd.org/casaview,-96.67472472,32.84547966,'057905125,Adams,1
+86,147,147,Gill Elementary School,Elementary,10910 Ferguson Rd.,Dallas,75228,9727498400,http://www.dallasisd.org/gill,-96.66071817,32.84420811,'057905147,Adams,1
+87,153,153,Hexter Elementary School,Elementary,9720 Waterview Rd.,Dallas,75218,9725025800,http://www.dallasisd.org/hexter,-96.70958707,32.84923321,'057905153,Adams,1
+88,159,159,Hotchkiss Elementary School,Elementary,6929 Town North Dr.,Dallas,75231,9727497000,http://www.dallasisd.org/hotchkiss,-96.74049592,32.85866034,'057905159,Conrad,28
+89,166,166,Kiest Elementary School,Elementary,2611 Healey Dr.,Dallas,75228,9725025600,http://www.dallasisd.org/kiest,-96.67050495,32.82585781,'057905166,Adams,1
+90,198,198,Reilly Elementary School,Elementary,11230 Lippitt Ave.,Dallas,75218,9727497800,http://www.dallasisd.org/reilly,-96.68836387,32.85475583,'057905198,Adams,1
+91,199,199,Reinhardt Elementary School,Elementary,10122 Losa Dr.,Dallas,75218,9727497900,http://www.dallasisd.org/reinhardt,-96.69219615,32.83701322,'057905199,Adams,1
+92,250,250,Young Jr. Elementary School,Elementary,4601 Veterans Dr.,Dallas,75216,9727492000,http://www.dallasisd.org/young,-96.78587966,32.69628035,'057905250,SOC,16
+93,172,172,Brashear Elementary School,Elementary,2959 S. Hampton Rd.,Dallas,75224,9725022600,http://www.dallasisd.org/brashear,-96.85785449,32.71258097,'057905172,Kimball,8
+94,183,183,Marsalis Elementary School,Elementary,5640 S. Marsalis Ave.,Dallas,75241,9727493500,http://www.dallasisd.org/marsalis,-96.81333695,32.67817293,'057905183,SOC,16
+95,210,210,Stemmons Elementary School,Elementary,2727 Knoxville St.,Dallas,75211,9727944900,http://www.dallasisd.org/stemmons,-96.90152461,32.71565926,'057905210,Kimball,8
+96,213,213,Terry Elementary School,Elementary,6661 Greenspan Ave.,Dallas,75232,9727493200,http://www.dallasisd.org/terry,-96.830194,32.66555424,'057905213,Carter,23
+97,215,215,Thornton Elementary School,Elementary,6011 Old Ox Rd.,Dallas,75241,9727948000,http://www.dallasisd.org/rlthornton,-96.79795313,32.67409167,'057905215,SOC,16
+98,277,277,Tolbert Elementary School,Elementary,4000 Blue Ridge Rd.,Dallas,75233,9727945900,http://www.dallasisd.org/tolbert,-96.88790904,32.69912321,'057905277,Kimball,8
+99,219,219,Turner Elementary School,Elementary,5505 S. Polk St.,Dallas,75232,9727946300,http://www.dallasisd.org/turner,-96.8423843,32.67845316,'057905219,Carter,23
+100,225,225,Webster Elementary School,Elementary,3815 S. Franklin St.,Dallas,75233,9727946100,http://www.dallasisd.org/webster,-96.86153589,32.69679112,'057905225,Kimball,8
+101,274,274,Bethune Elementary School,Elementary,1665 Duncanville Rd.,Dallas,75211,9725021300,http://www.dallasisd.org/bethune,-96.90978046,32.72659121,'057905274,Molina,5
+102,236,236,Cochran Elementary School,Elementary,6000 Keeneland Pkwy.,Dallas,75211,9727944600,http://www.dallasisd.org/cochran,-96.9252509,32.73548407,'057905236,Molina,5
+103,164,164,Jones Elementary School,Elementary,3901 Meredith Ave.,Dallas,75211,9727944700,http://www.dallasisd.org/jones,-96.88483017,32.74291973,'057905164,Sunset,18
+104,287,287,Soto Jr. Elementary School,Elementary,4510 West Jefferson Blvd.,Dallas,75211,9725025100,http://www.dallasisd.org/soto,-96.8944364,32.73587915,'057905287,Molina,5
+105,114,114,Bryan Elementary School,Elementary,2001 Deer Path Dr.,Dallas,75216,9725028500,http://www.dallasisd.org/bryan,-96.79500526,32.71158036,'057905114,Roosevelt,13
+106,115,115,Budd Elementary School,Elementary,2121 S. Marsalis Ave.,Dallas,75216,9725028400,http://www.dallasisd.org/budd,-96.81514418,32.72206527,'057905115,Roosevelt,13
+107,118,118,Bushman Elementary School,Elementary,4200 Bonnie View Rd.,Dallas,75216,9727491800,http://www.dallasisd.org/bushman,-96.77364368,32.70842776,'057905118,SOC,16
+108,6,6,Hillcrest High School,High,9924 Hillcrest Rd.,Dallas,75230,9725026800,http://www.dallasisd.org/hillcrest,-96.78462338,32.88315319,'057905006,Hillcrest,6
+109,15,15,Seagoville High School,High,15920 Seagoville Rd.,Dallas,75253,9728925900,http://www.dallasisd.org/seagovillehs,-96.58345455,32.67756373,'057905015,Seagoville,15
+110,380,380,Wilmer-Hutchins High School,High,5520 Langdon Rd.,Dallas,75241,9729252900,http://www.dallasisd.org/wilmerhutchinshs,-96.72974612,32.65659488,'057905380,Wilmer-Hutchins,380
+111,23,23,Carter High School,High,1819 W. Wheatland Rd.,Dallas,75232,2149325700,http://www.dallasisd.org/carter,-96.84862316,32.6496796,'057905023,Carter,23
+112,32,32,Madison High School,High,3000 Martin Luther King Blvd.,Dallas,75215,9729252800,http://www.dallasisd.org/madison,-96.76486081,32.77129099,'057905032,Madison,32
+113,24,24,North Dallas High School,High,3120 N. Haskell Ave.,Dallas,75204,9729251500,http://www.dallasisd.org/northdallas,-96.79568007,32.80974145,'057905024,North Dallas,24
+114,22,22,Wilson High School,High,100 S. Glasgow Dr.,Dallas,75214,9725024400,http://www.dallasisd.org/woodrow,-96.75149942,32.80608098,'057905022,Wilson,22
+115,12,12,Pinkston High School,High,2200 Dennison St.,Dallas,75212,9725022700,http://www.dallasisd.org/pinkston,-96.85852378,32.78112682,'057905012,Pinkston,12
+116,2,2,Adamson High School,High,309 E. Ninth St.,Dallas,75203,9727491400,http://www.dallasisd.org/adamson,-96.8204931,32.74842987,'057905002,Adamson,2
+117,18,18,Sunset High School,High,2120 W. Jefferson Blvd.,Dallas,75208,9725021500,http://www.dallasisd.org/sunset,-96.85443731,32.74617167,'057905018,Sunset,18
+118,1,1,Adams High School,High,2101 Millmar Dr.,Dallas,75228,9725024900,http://www.dallasisd.org/bryanadams,-96.68289648,32.82790272,'057905001,Adams,1
+119,8,8,Kimball High School,High,3606 S. Westmoreland Rd.,Dallas,75233,9725022100,http://www.dallasisd.org/kimball,-96.87639925,32.69824194,'057905008,Kimball,8
+120,5,5,Molina High School,High,2355 Duncanville Rd.,Dallas,75211,9725021000,http://www.dallasisd.org/molina,-96.91036404,32.72269835,'057905005,Molina,5
+121,60,60,Storey Middle School,Middle,3000 Maryland Ave.,Dallas,75216,9729258700,http://www.dallasisd.org/storey,-96.81208413,32.70855602,'057905060,SOC,16
+122,44,44,Cary Middle School,Middle,3978 Killion Dr.,Dallas,75229,9725027600,http://www.dallasisd.org/cary,-96.84671465,32.88185027,'057905044,Jefferson,7
+123,54,54,Marsh Preparatory Academy Middle School,Middle,3838 Crown Shore Dr.,Dallas,75244,9725026600,http://www.dallasisd.org/marsh,-96.8501018,32.91133344,'057905054,White,21
+124,56,56,Walker Middle School,Middle,12532 Nuestra Dr.,Dallas,75230,9725026100,http://www.dallasisd.org/walker,-96.80988923,32.91939283,'057905056,White,21
+125,83,83,Tasby Middle School,Middle,7001 Fair Oaks Ave.,Dallas,75231,9725021900,http://www.dallasisd.org/tasby,-96.75994386,32.87248414,'057905083,Conrad,28
+126,46,46,Young Men's Leadership Academy at Fred F. Florence Middle School,Middle,1625 N. Masters Dr.,Dallas,75217,9727496000,http://www.dallasisd.org/florence,-96.64930405,32.74148981,'057905046,Samuell,14
+127,45,45,Comstock Middle School,Middle,7044 Hodde St.,Dallas,75217,9727941300,http://www.dallasisd.org/comstock,-96.70212108,32.72105048,'057905045,Spruce,17
+128,52,52,Piedmont Global Academy Middle School,Middle,7625 Hume Dr.,Dallas,75227,9727494100,http://www.dallasisd.org/hood,-96.69113835,32.75845838,'057905052,Samuell,14
+129,352,352,Young Women's STEAM Academy at Balch Springs Middle School,Middle,710 Cheyenne Rd.,Balch Spr,75180,9728925800,http://www.dallasisd.org/balchsprings,-96.63837618,32.72563844,'057905352,Spruce,17
+130,42,42,Atwell Middle School,Middle,1303 Reynoldston Lane,Dallas,75232,9727946400,http://www.dallasisd.org/atwellacademy,-96.84175451,32.67776538,'057905042,Carter,23
+131,58,58,Spence Middle School,Middle,4001 Capitol Ave.,Dallas,75204,9729252300,http://www.dallasisd.org/spence,-96.78800049,32.80782539,'057905058,North Dallas,24
+132,49,49,Greiner Middle School,Middle,501 S. Edgefield Ave.,Dallas,75208,9729257100,http://www.dallasisd.org/greineracademy,-96.84494799,32.74000383,'057905049,Sunset,18
+133,163,163,Cedar Crest Elementary School,Elementary,2020 Mouser St.,Dallas,75203,9729257400,http://www.dallasisd.org/cedarcrest,-96.792955,32.73745713,'057905163,Roosevelt,13
+134,178,178,Holland at Lisbon Elementary School,Elementary,4203 S. Lancaster Rd.,Dallas,75216,9727491900,http://www.dallasisd.org/holland,-96.79580466,32.69737532,'057905178,SOC,16
+135,185,185,Miller Elementary School,Elementary,3111 Bonnie View Rd.,Dallas,75216,9725028700,http://www.dallasisd.org/miller,-96.78021798,32.71867851,'057905185,Roosevelt,13
+136,189,189,Oliver Elementary School,Elementary,4010 Idaho Ave.,Dallas,75216,9727493400,http://www.dallasisd.org/oliver,-96.81098205,32.6949231,'057905189,SOC,16
+137,191,191,Pease Elementary School,Elementary,2914 Cummings St.,Dallas,75216,2149323800,http://www.dallasisd.org/pease,-96.77264178,32.69799781,'057905191,SOC,16
+138,121,121,Carpenter Elementary School,Elementary,2121 Tosca Lane,Dallas,75224,9727946000,http://www.dallasisd.org/carpenter,-96.85301532,32.69574191,'057905121,Kimball,8
+139,133,133,Jordan Elementary School,Elementary,1111 W. Kiest Blvd.,Dallas,75224,9729258100,http://www.dallasisd.org/jordan,-96.84167293,32.70654591,'057905133,SOC,16
+140,205,205,Russell Elementary School,Elementary,3031 S. Beckley Ave.,Dallas,75224,9729258300,http://www.dallasisd.org/russell,-96.82387998,32.70858235,'057905205,SOC,16
+141,233,233,N. Adams Elementary School,Elementary,12600 Welch Rd.,Dallas,75244,9727942600,http://www.dallasisd.org/nathanadams,-96.82826298,32.92151437,'057905233,White,21
+142,120,120,Caillet Elementary School,Elementary,3033 Merrell Rd.,Dallas,75229,9727943200,http://www.dallasisd.org/caillet,-96.87452286,32.88872786,'057905120,White,21
+143,135,135,DeGolyer Elementary School,Elementary,3453 Flair Dr.,Dallas,75229,9727942800,http://www.dallasisd.org/degolyer,-96.86145688,32.90419029,'057905135,White,21
+144,148,148,Gooch Elementary School,Elementary,4030 Calculus Rd.,Dallas,75244,9727942500,http://www.dallasisd.org/gooch,-96.84455159,32.9169581,'057905148,White,21
+145,182,182,Marcus Elementary School,Elementary,2911 Northaven,Dallas,75229,9727942900,http://www.dallasisd.org/marcus,-96.88002308,32.90462748,'057905182,White,21
+146,193,193,Pershing Elementary School,Elementary,5715 Meaders Lane,Dallas,75229,9727948600,http://www.dallasisd.org/pershing,-96.80984842,32.88759662,'057905193,Hillcrest,6
+147,224,224,Walnut Hill Elementary School,Elementary,10115 Midway Rd.,Dallas,75229,9725027800,http://www.dallasisd.org/walnuthill,-96.83957713,32.88287138,'057905224,Jefferson,7
+148,230,230,Withers Elementary School,Elementary,3959 Northaven Rd.,Dallas,75229,9727945000,http://www.dallasisd.org/withers,-96.84590768,32.90324587,'057905230,White,21
+149,195,195,Preston Hollow Elementary School,Elementary,6423 Walnut Hill Lane,Dallas,75230,9727948500,http://www.dallasisd.org/prestonhollow,-96.7956084,32.88065682,'057905195,Hillcrest,6
+150,176,176,Lowe Sr. Elementary School,Elementary,7000 Holly Hill Dr.,Dallas,75231,9725021700,http://www.dallasisd.org/lowe,-96.76070396,32.87311703,'057905176,Conrad,28
+151,286,286,McShan Jr. Elementary School,Elementary,8307 Meadow Rd.,Dallas,75231,9725023800,http://www.dallasisd.org/mcshan,-96.76098599,32.88837306,'057905286,Conrad,28
+152,141,141,Stone Elementary School at Vickery Meadow,Elementary,6606 Ridgecrest Rd.,Dallas,75231,9725027900,http://www.dallasisd.org/jillstone,-96.74949329,32.86549524,'057905141,Conrad,28
+153,101,101,J.Q. Adams Elementary School,Elementary,8239 Lake June Rd.,Dallas,75217,9727941200,http://www.dallasisd.org/jqadams,-96.67978436,32.73511393,'057905101,Samuell,14
+154,104,104,Anderson Elementary School,Elementary,620 N. St. Augustine Dr.,Dallas,75217,9727496200,http://www.dallasisd.org/anderson,-96.65559294,32.72229235,'057905104,Spruce,17
+155,110,110,Blanton Elementary School,Elementary,8915 Greenmound Ave.,Dallas,75227,9727941700,http://www.dallasisd.org/blanton,-96.66869089,32.75192033,'057905110,Samuell,14
+156,276,276,Cuellar Sr. Elementary School,Elementary,337 Pleasant Vista Dr.,Dallas,75217,9727496400,http://www.dallasisd.org/cuellar,-96.64313368,32.71704808,'057905276,Spruce,17
+157,137,137,Dorsey Elementary School,Elementary,133 N. St. Augustine,Dallas,75217,9727496300,http://www.dallasisd.org/dorsey,-96.65818555,32.71302397,'057905137,Spruce,17
+158,156,156,Hawthorne Elementary School,Elementary,7800 Umphress Rd.,Dallas,75217,9727494700,http://www.dallasisd.org/hawthorne,-96.68880063,32.74212558,'057905156,Samuell,14
+159,170,170,Lagow Elementary School,Elementary,637 Edgeworth Dr.,Dallas,75217,9727496600,http://www.dallasisd.org/lagow,-96.63672608,32.70243249,'057905170,Spruce,17
+160,180,180,Macon Elementary School,Elementary,650 Holcomb Rd.,Dallas,75217,9727941500,http://www.dallasisd.org/macon,-96.6735568,32.72251852,'057905180,Spruce,17
+161,237,237,Runyon Elementary School,Elementary,10750 Cradlerock Dr.,Dallas,75217,9727496100,http://www.dallasisd.org/runyon,-96.64104066,32.74042162,'057905237,Samuell,14
+162,234,234,Gonzalez Personalized Learning Academy,Elementary,6610 Lake June Rd.,Dallas,75217,9725023300,http://www.dallasisd.org/gonzalez,-96.70777002,32.73397257,'057905234,Spruce,17
+163,161,161,Ireland Elementary School,Elementary,1515 N. Jim Miller Rd.,Dallas,75217,9727494900,http://www.dallasisd.org/ireland,-96.70139866,32.73956568,'057905161,Samuell,14
+164,207,207,San Jacinto Elementary School,Elementary,7900 Hume Dr.,Dallas,75227,9727494200,http://www.dallasisd.org/sanjacinto,-96.68595192,32.75697135,'057905207,Samuell,14
+165,222,222,Urban Park Elementary School,Elementary,6901 Military Pkwy.,Dallas,75227,9727941100,http://www.dallasisd.org/urbanpark,-96.70165322,32.7739152,'057905222,Skyline,25
+166,303,303,Richardson Elementary School,Elementary,7203 Bruton Rd.,Dallas,75217,9728928100,http://www.dallasisd.org/richardson,-96.6940325,32.75040884,'057905303,Samuell,14
+167,119,119,Chapel Hill Elementary School,Elementary,12701 Templeton Trail,Dallas,75234,9727942400,http://www.dallasisd.org/chapelhill,-96.86579406,32.9180539,'057905119,White,21
+168,279,279,Junkins Elementary School,Elementary,2808 Running Duke Dr.,Carrollton,75006,9725022400,http://www.dallasisd.org/junkins,-96.85631569,32.97378701,'057905279,White,21
+169,304,304,Bush Elementary School,Elementary,3939 Spring Valley Rd.,Addison,75001,9729251700,http://www.dallasisd.org/georgehwbush,-96.84982527,32.94182652,'057905304,White,21
+170,154,154,Smith Elementary School,Elementary,5229 Gus Thomasson Rd.,Mesquite,75150,9725024800,http://www.dallasisd.org/lgsmith,-96.65883478,32.83281267,'057905154,Adams,1
+171,126,126,Central Elementary School,Elementary,902 Shady Lane,Seagoville,75159,9727496800,http://www.dallasisd.org/central,-96.53762355,32.65819978,'057905126,Seagoville,15
+172,208,208,Seagoville Elementary School,Elementary,304 N. Kaufman St.,Seagoville,75159,9728927900,http://www.dallasisd.org/seagovillees,-96.54013768,32.64082544,'057905208,Seagoville,15
+173,244,244,Seagoville North Elementary,Elementary,1906 Seagoville Rd.,Seagoville,75159,9728925300,http://www.dallasisd.org/seagovillenorth,-96.55654556,32.66375585,'057905244,Seagoville,15
+174,173,173,Lanier Elementary School,Elementary,1400 Walmsley Ave.,Dallas,75208,9727944400,http://www.dallasisd.org/lanier,-96.84409245,32.76891302,'057905173,Pinkston,12
+175,194,194,Polk Elementary School,Elementary,6911 Victoria Ave.,Dallas,75209,9727948900,http://www.dallasisd.org/polk,-96.83168387,32.84225703,'057905194,Jefferson,7
+176,107,107,May Elementary School,Elementary,9818 Brockbank Dr.,Dallas,75220,9729253700,Http://www.dallasisd.org/joemay,-96.87501996,32.87169062,'057905107,Jefferson,7
+177,13,13,Roosevelt High School,High,525 Bonnie View Rd.,Dallas,75203,9729256800,http://www.dallasisd.org/roosevelt,-96.79671581,32.7422883,'057905013,Roosevelt,13
+178,16,16,South Oak Cliff High School,High,3601 S. Marsalis Ave.,Dallas,75216,2149327000,http://www.dallasisd.org/soc,-96.81624215,32.69955799,'057905016,SOC,16
+179,7,7,Jefferson High School,High,4001 Walnut Hill Lane,Dallas,75229,9725027300,http://www.dallasisd.org/tjefferson,-96.84495028,32.88190618,'057905007,Jefferson,7
+180,21,21,White High School,High,4505 Ridgeside Dr.,Dallas,75244,9725026200,http://www.dallasisd.org/wtwhite,-96.83167016,32.91685785,'057905021,White,21
+181,28,28,Conrad High School,High,7502 Fair Oaks Ave.,Dallas,75231,9725022300,http://www.dallasisd.org/conrad,-96.75190459,32.8763826,'057905028,Conrad,28
+182,14,14,Samuell High School,High,8928 Palisade Dr.,Dallas,75217,9728925100,http://www.dallasisd.org/samuell,-96.66766042,32.74531924,'057905014,Samuell,14
+183,17,17,Spruce High School,High,9733 Old Seagoville Rd.,Dallas,75217,9728925500,http://www.dallasisd.org/spruce,-96.65385192,32.71050456,'057905017,Spruce,17
+184,25,25,Skyline High School,High,7777 Forney Rd.,Dallas,75227,9725023400,http://www.dallasisd.org/skyline,-96.69054992,32.78050945,'057905025,Skyline,25
+185,9,9,Lincoln High School,High,2826 Hatcher St.,Dallas,75215,9729257600,http://www.dallasisd.org/lincoln,-96.7496989,32.75480271,'057905009,Lincoln,9
+186,206,206,Sanger Preparatory School,Elementary,8410 San Leandro Dr.,Dallas,75218,9727497600,http://www.dallasisd.org/sanger,-96.70943206,32.8134598,'057905206,Adams,1
+187,263,263,Starks Elementary School,Elementary,3033 Tips Blvd.,Dallas,75216,9725028800,http://www.dallasisd.org/starks,-96.77409825,32.72176631,'057905263,Roosevelt,13
+188,51,51,Holmes Middle School,Middle,2001 E. Kiest Blvd.,Dallas,75216,9729258500,http://www.dallasisd.org/owholmes,-96.79096836,32.71629627,'057905051,Roosevelt,13
+189,273,273,Pleasant Grove Elementary School,Elementary,1614 N. St. Augustine Rd.,Dallas,75217,9728925000,http://www.dallasisd.org/pleasantgrove,-96.65566288,32.73846265,'057905273,Samuell,14

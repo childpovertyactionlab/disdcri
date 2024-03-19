@@ -1,17 +1,12 @@
-rm(list=ls(all=TRUE))
-setwd("PASTE WORKING DIRECTORY HERE")
+# Setup ----
+library(sf)
 library(tidycensus)
 library(tidyverse)
 library(rio)
 
-#census_api_key("aed7bfa15ecfb5bdac5fc798f4bd0aa63d56bab4", install = TRUE)
-acs18 <- load_variables(2018, "acs5", cache = TRUE)
-#data(fips_codes)
-#years <- lst(2014, 2015, 2016, 2017, 2018)
-
 counties <- c("dallas", "rockwall", "collin county", "denton", "tarrant", "kaufman", "ellis")
 
-#CRI ACS Community Variables no transformation
+# CRI ACS Community Variables
 comm_variables <- c(
   comm_thh = "B25106_001", 
   comm_oohh = "B25106_002", 
@@ -33,17 +28,33 @@ comm_variables <- c(
   comm_bb5 = "B28005_002"
   )
 
-#City of Dallas 5 Year ACS Community Variable
-comm_cityofdall <- get_acs(geography = "place", variables = comm_variables,
-                                      state = "TX", year = 2018, survey = "acs5", output = "wide") %>%
+# Import ----
+
+get_acs_vars <- function(year){
+  
+  load_variables(year, "acs5")
+
+}
+
+get_community <- function(geography, year){
+  
+  get_acs(geography = geography, 
+          variables = comm_variables,
+          state = "TX",
+          year = year,
+          survey = "acs5", 
+          output = "wide")
+  
+}
+
+comm_cityofdall <- get_community(geography = "place", 
+                                 year = 2018) %>%
   filter(GEOID == 4819000) %>%
-  mutate(
-    GEOTYPE = "PLACE")
+  mutate(GEOTYPE = "PLACE")
 
-
-#Dallas County 5 Year ACS Community Variables
-comm_dallcounty <- get_acs(geography = "tract", variables = comm_variables,
-                                            state = "TX", county = "dallas", year = 2018, survey = "acs5", output = "wide") %>%
+# Dallas County Tracts 5 Year ACS Community Variables
+comm_dallas_tracts <- get_community(geography = "tract", 
+                                 year = 2018)  %>%
   mutate(GEOTYPE = "TRACT")
 
 #North Texas Counties 5 Year ACS Community Variables
@@ -76,6 +87,3 @@ comm_geo <- mutate(comm_geo,
                    comm_u18bbpM = comm_bb1M/comm_bb5M,
                    comm_bbpM = sqrt((comm_bb1M^2)+(comm_bb2M^2)+(comm_bb3M^2)/comm_bb4M)
 )
-
-#Export to .csv
-export(comm_geo, "PASTE EXPORT DIRECTORY HERE")

@@ -30,12 +30,6 @@ comm_variables <- c(
 
 # Import ----
 
-get_acs_vars <- function(year){
-  
-  load_variables(year, "acs5")
-
-}
-
 get_community <- function(geography, year){
   
   get_acs(geography = geography, 

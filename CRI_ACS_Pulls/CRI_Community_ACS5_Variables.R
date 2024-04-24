@@ -2,7 +2,10 @@
 library(sf)
 library(tidycensus)
 library(tidyverse)
+library(tigris)
 library(rio)
+
+options(tigris_use_cache = TRUE)
 
 counties <- c(
   "dallas",
@@ -13,6 +16,9 @@ counties <- c(
   "kaufman",
   "ellis"
 )
+
+# acs variables
+vars_acs <- load_variables(2022, dataset = "acs5")
 
 # CRI ACS Community Variables
 comm_variables <- c(
@@ -38,14 +44,10 @@ comm_variables <- c(
 
 # Import ----
 
-get_acs_vars <- function(year) {
-  load_variables(year, "acs5/subject")
-}
-
-cri_get_acs <- function(geography, year) {
+cri_get_acs <- function(geography, year, variables) {
   get_acs(
     geography = geography,
-    variables = econ_Svariables,
+    variables = variables,
     state = "TX",
     year = year,
     survey = "acs5",
@@ -53,17 +55,19 @@ cri_get_acs <- function(geography, year) {
   )
 }
 
-comm_cityofdall <- get_community(
+comm_cityofdall <- cri_get_acs(
   geography = "place",
-  year = 2018
+  year = 2018,
+  variables = comm_variables
 ) %>%
   filter(GEOID == 4819000) %>%
   mutate(GEOTYPE = "PLACE")
 
 # Dallas County Tracts 5 Year ACS Community Variables
-comm_dallcounty <- get_community(
+comm_dallcounty <- cri_get_acs(
   geography = "tract",
-  year = 2018
+  year = 2018,
+  variables = comm_variables
 ) %>%
   mutate(GEOTYPE = "TRACT")
 
@@ -79,7 +83,10 @@ comm_ntxcountiesT <- get_acs(
 
 comm_ntxcountiesC <- get_acs(
   geography = "county", variables = comm_variables,
-  state = "TX", county = counties, year = 2018, survey = "acs5", output = "wide"
+  state = "TX", county = counties,
+  year = 2018,
+  survey = "acs5",
+  output = "wide"
 ) %>%
   mutate(GEOTYPE = "COUNTY")
 

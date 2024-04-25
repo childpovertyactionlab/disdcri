@@ -89,7 +89,11 @@ comm_dfw <- get_acs(
   mutate(GEOTYPE = "MSA")
 
 # merge datasets
-comm_geo <- full_join(full_join(full_join(comm_cityofdall, comm_dallcounty), comm_dfw), comm_ntxcounties)
+comm_geo2 <- rbind(comm_cityofdall,
+                   comm_dallcounty,
+                   comm_dfw,
+                   comm_ntxcounties) %>%
+  distinct()
 
 # combining and estimating margins of estimate(M) and coefficient of variation(CV)
 comm_geo <- mutate(comm_geo,

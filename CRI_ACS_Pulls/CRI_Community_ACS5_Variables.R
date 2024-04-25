@@ -10,7 +10,7 @@ options(tigris_use_cache = TRUE)
 counties <- c(
   "dallas",
   "rockwall",
-  "collin",
+  "collin county",
   "denton",
   "tarrant",
   "kaufman",
@@ -44,15 +44,17 @@ comm_variables <- c(
 
 # Import ----
 
-cri_get_acs <- function(geography, year, variables) {
+cri_get_acs <- function(geography, year, variables, ...) {
   get_acs(
     geography = geography,
     variables = variables,
     state = "TX",
     year = year,
     survey = "acs5",
-    output = "wide"
-  )
+    output = "wide",
+    ...
+  ) %>%
+    mutate(GEOTYPE = toupper(geography))
 }
 
 comm_cityofdall <- cri_get_acs(
@@ -60,40 +62,23 @@ comm_cityofdall <- cri_get_acs(
   year = 2018,
   variables = comm_variables
 ) %>%
-  filter(GEOID == 4819000) %>%
-  mutate(GEOTYPE = "PLACE")
+  filter(GEOID == 4819000)
 
 # Dallas County Tracts 5 Year ACS Community Variables
 comm_dallcounty <- cri_get_acs(
   geography = "tract",
   year = 2018,
-  variables = comm_variables
-) %>%
-  mutate(GEOTYPE = "TRACT")
+  variables = comm_variables,
+  county = "dallas"
+)
+
 
 # North Texas Counties 5 Year ACS Community Variables
-comm_ntxcountiesT <- get_acs(
-  geography = "tract",
-  county = counties,
-  state = "TX",
-  variables = comm_variables,
-  year = 2018, survey = "acs5", output = "wide"
-) %>%
-  mutate(GEOTYPE = "TRACT")
 
-comm_ntxcountiesC <- get_acs(
-  geography = "county", variables = comm_variables,
-  state = "TX", county = counties,
-  year = 2018,
-  survey = "acs5",
-  output = "wide"
-) %>%
-  mutate(GEOTYPE = "COUNTY")
-
-comm_ntxcounties <- full_join(comm_ntxcountiesT, comm_ntxcountiesC)
-
-rm(comm_ntxcountiesC)
-rm(comm_ntxcountiesT)
+comm_ntxcounties <- list_rbind(
+  map(c("tract", "county"),
+      cri_get_acs, year = 2018, variables = comm_variables, county = counties)
+  )
 
 # Dallas/Ft. Worth MSA 5 Year ACS Community Variables
 comm_dfw <- get_acs(

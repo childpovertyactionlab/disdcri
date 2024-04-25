@@ -18,7 +18,7 @@ counties <- c(
 )
 
 # acs variables
-vars_acs <- load_variables(2022, dataset = "acs5")
+vars_acs <- load_variables(2018, dataset = "acs5")
 
 # CRI ACS Community Variables
 comm_variables <- c(
@@ -77,8 +77,10 @@ comm_dallcounty <- cri_get_acs(
 
 comm_ntxcounties <- list_rbind(
   map(c("tract", "county"),
-      cri_get_acs, year = 2018, variables = comm_variables, county = counties)
+    cri_get_acs,
+    year = 2018, variables = comm_variables, county = counties
   )
+)
 
 # Dallas/Ft. Worth MSA 5 Year ACS Community Variables
 comm_dfw <- get_acs(
@@ -88,14 +90,19 @@ comm_dfw <- get_acs(
   filter(GEOID == 19100) %>%
   mutate(GEOTYPE = "MSA")
 
+# Transform ----
+
 # merge datasets
-comm_geo2 <- rbind(comm_cityofdall,
-                   comm_dallcounty,
-                   comm_dfw,
-                   comm_ntxcounties) %>%
+comm_geo <- rbind(
+  comm_cityofdall,
+  comm_dallcounty,
+  comm_dfw,
+  comm_ntxcounties
+) %>%
   distinct()
 
-# combining and estimating margins of estimate(M) and coefficient of variation(CV)
+# combining and estimating
+# margins of estimate(M) and coefficient of variation(CV)
 comm_geo <- mutate(comm_geo,
   comm_u18bbpE = comm_bb1E / comm_bb5E,
   comm_bbpE = (comm_bb1E + comm_bb2E + comm_bb3E) / comm_bb4E,

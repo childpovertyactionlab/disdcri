@@ -2,7 +2,9 @@ library(tidycensus)
 library(tidyverse)
 library(rio)
 
-vars_acs22 <- load_variables(2022, "acs5", cache = TRUE)
+vars_subj_acs18 <- load_variables(2018, "acs5/subject", cache = TRUE)
+
+vars_dp_acs18 <- load_variables(year = 2018, "acs5/profile")
 
 counties <- c("dallas",
               "rockwall",
@@ -14,9 +16,9 @@ counties <- c("dallas",
 
 # CRI ACS Economics Variables no transformation
 econ_Svariables <- c(
-  econ_adupop = "S2301_C01_001",
-  econ_juvpop1 = "S2301_C01_002",
-  econ_juvpop2 = "S2301_C01_003",
+  econ_adupop = "B23001_001",
+  econ_juvpop1 = "B23001_003",
+  econ_juvpop2 = "DP05_0009",
   econ_pop = "S1701_C01_001",
   econ_belpov = "S1701_C02_001",
   econ_kids = "S1701_C01_002",

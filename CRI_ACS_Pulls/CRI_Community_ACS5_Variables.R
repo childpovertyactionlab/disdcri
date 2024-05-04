@@ -1,5 +1,4 @@
 # Setup ----
-library(sf)
 library(tidycensus)
 library(tidyverse)
 library(tigris)

@@ -19,7 +19,7 @@ counties <- c(
 # acs variables
 vars_acs <- load_variables(2018, dataset = "acs5")
 
-# CRI ACS Community Variables
+# CRI ACS Community Variables ----
 comm_variables <- c(
   comm_thh = "B25106_001",
   comm_oohh = "B25106_002",

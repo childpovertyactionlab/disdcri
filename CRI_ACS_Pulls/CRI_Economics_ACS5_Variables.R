@@ -14,7 +14,7 @@ counties <- c("dallas",
               "kaufman",
               "ellis")
 
-# CRI ACS Economics Variables no transformation
+# CRI ACS Economics Variables no transformation ----
 econ_Svariables <- c(
   econ_adupop = "B23001_001",
   econ_juvpop1 = "B23001_003",
@@ -47,7 +47,7 @@ econ_medinc <- c(
 # B tables and S tables unable to load with same get_acs pull
 # have to be done seperately.
 
-# City of Dallas 5 Year ACS Economic Variables
+# City of Dallas 5 Year ACS Economic Variables ----
 econ_cityofdallS <- get_acs(
   geography = "place",
   variables = econ_Svariables,

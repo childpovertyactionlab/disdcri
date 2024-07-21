@@ -2,7 +2,6 @@
 library(tidycensus)
 library(tidyverse)
 library(tigris)
-library(rio)
 
 options(tigris_use_cache = TRUE)
 
@@ -71,9 +70,7 @@ comm_dallcounty <- cri_get_acs(
   county = "dallas"
 )
 
-
 # North Texas Counties 5 Year ACS Community Variables
-
 comm_ntxcounties <- list_rbind(
   map(c("tract", "county"),
     cri_get_acs,
@@ -81,10 +78,13 @@ comm_ntxcounties <- list_rbind(
   )
 )
 
-# Dallas/Ft. Worth MSA 5 Year ACS Community Variables
+# DFW MSA 5 Year ACS Community Variables
 comm_dfw <- get_acs(
-  geography = "cbsa", variables = comm_variables,
-  year = 2018, survey = "acs5", output = "wide"
+  geography = "cbsa",
+  variables = comm_variables,
+  year = 2018,
+  survey = "acs5",
+  output = "wide"
 ) %>%
   filter(GEOID == 19100) %>%
   mutate(GEOTYPE = "MSA")

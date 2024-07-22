@@ -1,6 +1,8 @@
 # Setup ----
+library(factoextra)
 library(pastecs)
 library(rio)
+library(scales)
 library(tidycensus)
 library(tidyverse)
 library(tigris)

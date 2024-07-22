@@ -1,8 +1,4 @@
-rm(list=ls(all=TRUE))
-setwd("SET AS WORKING DIRECTORY OF DOWNLOADED FILE LOCATIONS")
-library(tidyverse)
-library(rio)
-library(pastecs)
+source("toolkit.R")
 
 #import 2 mile buffer files for each indicator.
 education <- import("CRI Education Buffer Data.csv")
@@ -24,7 +20,7 @@ education.r <- education %>%
          edu_oostcap_mean = oostcap_me) %>%
   select("TEA", "SLN", everything(.), -"AreaSqMi")
 rm(education.j)
-  
+
 #create new indicator variables based on input variables
 education.m <- mutate(education.r,
                       edu_perbach = (edu_multdeg+edu_bach)/edu_popadu,
@@ -74,7 +70,7 @@ education.q <- education.i %>%
   mutate_at(c(3:6), funs(c(quin_ = cut(.,5)))) %>%
   setNames(c(names(.)[1], paste0(names(.)[-1],"_quintile"))) %>%
   select(-("SLN_quintile")) %>%
-  mutate_at(c(2:5), funs((.)-1)) 
+  mutate_at(c(2:5), funs((.)-1))
 
 education.qF <- left_join(education.i, education.q)
 rm(education.q)

@@ -1,15 +1,11 @@
-rm(list=ls(all=TRUE))
-setwd("SET AS WORKING DIRECTORY OF DOWNLOADED FILE LOCATIONS")
-library(tidyverse)
-library(rio)
-library(pastecs)
+source("toolkit.R")
 
 #import 2 mile buffer files for each indicator.
 family <- import("Living Wage Jobs/04_Projects/CRI 2020/Data/Buffer Data/CRI Family Buffer Data.csv")
 
 #rename variables where necessary
 colnames(family)
-family.r <- family %>% 
+family.r <- family %>%
   select(-(ends_with("M"))) %>%
   rename(fam_hhc = hhcE,
          fam_hhcmh = hhcmhE,
@@ -71,7 +67,7 @@ family.q <- family.i %>%
   mutate_at(c(3:6), funs(c(quin_ = cut(.,5)))) %>%
   setNames(c(names(.)[1], paste0(names(.)[-1],"_quintile"))) %>%
   select(-("SLN_quintile")) %>%
-  mutate_at(c(2:5), funs((.)-1)) 
+  mutate_at(c(2:5), funs((.)-1))
 
 family.qF <- left_join(family.i, family.q)
 rm(family.q)

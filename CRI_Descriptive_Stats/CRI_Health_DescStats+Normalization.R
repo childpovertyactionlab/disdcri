@@ -1,8 +1,4 @@
-rm(list=ls(all=TRUE))
-setwd("SET AS WORKING DIRECTORY OF DOWNLOADED FILE LOCATIONS")
-library(tidyverse)
-library(rio)
-library(pastecs)
+source("toolkit.R")
 
 #import 2 mile buffer files for each indicator.
 health <- import("CRI Health Buffer Data.csv")
@@ -13,7 +9,7 @@ health.r <- health %>%
   select(-(ends_with("M")), "pharm") %>%
   rename(hel_totalpop = totalpopE,
          hel_popunin = popunisE,
-         hel_popins = popinsE, 
+         hel_popins = popinsE,
          hel_poppri = priE,
          hel_poppub = pub,
          hel_bphigh = bphighE,
@@ -57,8 +53,8 @@ health.m <- mutate(health.r,
 rm(health.r)
 
 #new dataframe only containing indicator variables which need to be summarized
-health.i <- select(health.m, "TEA", "SLN", "hel_bphigh", "hel_castthma", "hel_checkup", "hel_fruitsveggies", "hel_le", 
-                      "hel_mhlth", "hel_obesity", "hel_perpri", "hel_perpub", "hel_prtopu", "hel_pharmacap", "hel_phlth", "hel_sleep", 
+health.i <- select(health.m, "TEA", "SLN", "hel_bphigh", "hel_castthma", "hel_checkup", "hel_fruitsveggies", "hel_le",
+                      "hel_mhlth", "hel_obesity", "hel_perpri", "hel_perpub", "hel_prtopu", "hel_pharmacap", "hel_phlth", "hel_sleep",
                       "hel_stroke", "hel_perins", "hel_perunin", "hel_clincap", "hel_groccap")
 rm(health.m)
 
@@ -110,7 +106,7 @@ health.q <- health.i %>%
   mutate_at(c(3:20), funs(c(quin_ = cut(.,5)))) %>%
   setNames(c(names(.)[1], paste0(names(.)[-1],"_quintile"))) %>%
   select(-("SLN_quintile")) %>%
-  mutate_at(c(2:19), funs((.)-1)) 
+  mutate_at(c(2:19), funs((.)-1))
 
 health.qF <- left_join(health.i, health.q)
 rm(health.q)

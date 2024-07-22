@@ -1,27 +1,5 @@
 # Setup ----
-library(tidycensus)
-library(tidyverse)
-
-counties <- c(
-  "dallas",
-  "rockwall",
-  "collin county",
-  "denton",
-  "tarrant",
-  "kaufman",
-  "ellis"
-)
-
-# CRI ACS Health Variables no transformation
-hel_variables <- c(
-  hel_totalpop = "S2701_C01_001",
-  hel_popunins = "S2701_C04_001",
-  hel_popins = "S2701_C02_001",
-  hel_pripct = "S2703_C03_001",
-  hel_pubpct = "S2704_C03_001",
-  hel_poppri = "S2703_C01_001",
-  hel_poppub = "S2704_C01_001"
-)
+source("toolkit.R")
 
 # City of Dallas 5 Year ACS Family Variable
 hel_cityofdall <- cri_get_acs(

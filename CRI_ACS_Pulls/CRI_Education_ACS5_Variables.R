@@ -1,28 +1,5 @@
 # Setup ----
-library(tidycensus)
-library(tidyverse)
-
-acs18 <- load_variables(2018, "acs5", cache = TRUE)
-
-counties <- c("dallas",
-              "rockwall",
-              "collin county",
-              "denton",
-              "tarrant",
-              "kaufman",
-              "ellis")
-
-# CRI ACS Education Variables no transformation
-edu_variables <- c(
-  edu_popadu = "S1501_C01_006",
-  edu_bach = "S1501_C01_012",
-  edu_prof = "S1501_C01_013",
-  edu_k34 = "B09001_004",
-  edu_k34mpu = "B14003_004",
-  edu_k34mpr = "B14003_013",
-  edu_k34fpu = "B14003_032",
-  edu_k34fpr = "B14003_041"
-)
+source("toolkit.R")
 
 # City of Dallas 5 Year ACS Education Variables
 edu_cityofdall <- cri_get_acs(

@@ -1,3 +1,22 @@
+# Setup ----
+library(tidycensus)
+library(tidyverse)
+library(tigris)
+
+options(tigris_use_cache = TRUE)
+
+# geography ----
+
+counties <- c(
+  "dallas",
+  "rockwall",
+  "collin county",
+  "denton",
+  "tarrant",
+  "kaufman",
+  "ellis"
+)
+
 # CRI ACS Community Variables ----
 comm_variables <- c(
   comm_thh = "B25106_001",
@@ -20,8 +39,8 @@ comm_variables <- c(
   comm_bb5 = "B28005_002"
 )
 
-# CRI ACS Economics Variables no transformation ----
-econ_Svariables <- c(
+# CRI ACS Economics Variables ----
+econ_variables <- c(
   econ_adupop = "B23001_001",
   econ_juvpop1 = "B23001_003",
   econ_juvpop2 = "DP05_0009",
@@ -33,10 +52,7 @@ econ_Svariables <- c(
   econ_u5bp = "S1701_C02_003",
   econ_5t17 = "S1701_C01_004",
   econ_5t17bp = "S1701_C02_004",
-  econ_popov16 = "S0101_C01_025"
-)
-
-econ_medinc <- c(
+  econ_popov16 = "S0101_C01_025",
   econ_medinc = "B19013_001",
   econ_unem = "B23025_005",
   econ_juvunemM1 = "B23001_008",
@@ -48,3 +64,46 @@ econ_medinc <- c(
 )
 
 
+
+# CRI ACS Education Variables ----
+edu_variables <- c(
+  edu_popadu = "S1501_C01_006",
+  edu_bach = "S1501_C01_012",
+  edu_prof = "S1501_C01_013",
+  edu_k34 = "B09001_004",
+  edu_k34mpu = "B14003_004",
+  edu_k34mpr = "B14003_013",
+  edu_k34fpu = "B14003_032",
+  edu_k34fpr = "B14003_041"
+)
+# CRI ACS Family Variables ----
+fam_variables <- c(
+  fam_hhc = "S1101_C01_005",
+  fam_hhcmh = "S1101_C03_005",
+  fam_hhcfh = "S1101_C04_005",
+  fam_mghh = "B11017_001"
+)
+# CRI ACS Health Variables ----
+hel_variables <- c(
+  hel_totalpop = "S2701_C01_001",
+  hel_popunins = "S2701_C04_001",
+  hel_popins = "S2701_C02_001",
+  hel_pripct = "S2703_C03_001",
+  hel_pubpct = "S2704_C03_001",
+  hel_poppri = "S2703_C01_001",
+  hel_poppub = "S2704_C01_001"
+)
+
+# Import ----
+cri_get_acs <- function(geography, year, variables, ...) {
+  get_acs(
+    geography = geography,
+    variables = variables,
+    state = "TX",
+    year = year,
+    survey = "acs5",
+    output = "wide",
+    ...
+  ) %>%
+    mutate(GEOTYPE = toupper(geography))
+}

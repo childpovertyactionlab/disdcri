@@ -1,22 +1,5 @@
 # Setup ----
-library(tidycensus)
-library(tidyverse)
-
-counties <- c("dallas",
-              "rockwall",
-              "collin county",
-              "denton",
-              "tarrant",
-              "kaufman",
-              "ellis")
-
-# CRI ACS Family Variables no transformation
-fam_variables <- c(
-  fam_hhc = "S1101_C01_005",
-  fam_hhcmh = "S1101_C03_005",
-  fam_hhcfh = "S1101_C04_005",
-  fam_mghh = "B11017_001"
-)
+source("toolkit.R")
 
 # City of Dallas 5 Year ACS Family Variable
 fam_cityofdall <- cri_get_acs(

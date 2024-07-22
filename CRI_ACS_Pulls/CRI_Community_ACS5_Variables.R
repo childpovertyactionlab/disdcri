@@ -27,15 +27,12 @@ comm_ntxcounties <- list_rbind(
 )
 
 # DFW MSA 5 Year ACS Community Variables
-comm_dfw <- get_acs(
+comm_dfw <- cri_get_acs(
   geography = "cbsa",
   variables = comm_variables,
   year = 2018,
-  survey = "acs5",
-  output = "wide"
 ) %>%
-  filter(GEOID == 19100) %>%
-  mutate(GEOTYPE = "MSA")
+  filter(GEOID == 19100)
 
 # Transform ----
 

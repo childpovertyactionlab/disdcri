@@ -7,7 +7,7 @@ library(tigris)
 
 options(tigris_use_cache = TRUE)
 
-# geography ----
+# Geography ----
 
 counties <- c(
   "dallas",
@@ -96,12 +96,36 @@ hel_variables <- c(
   hel_poppub = "S2704_C01_001"
 )
 
+# Descriptive Stats ----
+desc_var <- c(
+  "nbr.val",
+  "nbr.null",
+  "nbr.na",
+  "min",
+  "max",
+  "range",
+  "sum",
+  "median",
+  "mean",
+  "SE.mean",
+  "CI.mean.0.95",
+  "var",
+  "std.dev",
+  "coef.var"
+)
 # Import ----
 cri_get_acs <- function(geography, year, variables, ...) {
+
+  if(geography == "cbsa"){
+    state <- NULL
+  }else{
+    state <- "TX"
+  }
+
   get_acs(
     geography = geography,
     variables = variables,
-    state = "TX",
+    state = state,
     year = year,
     survey = "acs5",
     output = "wide",
@@ -109,3 +133,13 @@ cri_get_acs <- function(geography, year, variables, ...) {
   ) %>%
     mutate(GEOTYPE = toupper(geography))
 }
+
+# Tidy ----
+
+# Transform ----
+
+# Visualize ----
+
+# Model ----
+
+# Communicate ----

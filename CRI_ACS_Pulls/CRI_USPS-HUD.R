@@ -1,4 +1,3 @@
-rm(list = ls(all = TRUE))
 library(tidyverse)
 
 # import USPS-HUD 2019 Quarterly Data

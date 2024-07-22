@@ -1,4 +1,6 @@
 # Setup ----
+library(pastecs)
+library(rio)
 library(tidycensus)
 library(tidyverse)
 library(tigris)

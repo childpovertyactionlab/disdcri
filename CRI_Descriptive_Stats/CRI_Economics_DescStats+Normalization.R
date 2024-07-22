@@ -6,10 +6,17 @@ economics <- import("CRI Economics Buffer Data.csv")
 # rename variables where necessary
 colnames(economics)
 economics.r <- economics %>%
-  select(-(ends_with("M")), -("AreaSqMi"), -("blockcount"), -("econ_5t1_1"), -("econ_pop_1"), -("urE"), -("pyrE"), -("MEAN_eco_2"))
-
-colnames(economics.r)
-economics.r <- economics.r %>%
+  select(
+    -c(
+      ends_with("M"),
+      AreaSqMi,
+      blockcount,
+      econ_5t1_1,
+      econ_pop_1,
+      urE, pyrE,
+      MEAN_eco_2
+    )
+  ) %>%
   rename(
     econ_adupop = adupopE,
     econ_pop = popE,
@@ -32,7 +39,7 @@ economics.r <- economics.r %>%
     econ_medinc = medincE,
     econ_popo16 = econ_popov
   ) %>%
-  select("TEA", "SLN", everything(.))
+  select(TEA, SLN, everything(.))
 
 # create new indicator variables based on input variables
 economics.m <- economics.r %>%
@@ -50,21 +57,29 @@ economics.m <- economics.r %>%
   )
 
 # new dataframe only containing indicator variables which need to be summarized
-economics.i <- select(
-  economics.m, "TEA", "SLN", "econ_cpr", "econ_fincap", "econ_medinc", "econ_paydaycap",
-  "econ_pctlwjobs", "econ_pctmwjobs", "econ_pr", "econ_pyr", "econ_ur"
-)
+economics.i <- economics.m %>%
+  select(
+    TEA,
+    SLN,
+    econ_cpr,
+    econ_fincap,
+    econ_medinc,
+    econ_paydaycap,
+    econ_pctlwjobs,
+    econ_pctmwjobs,
+    econ_pr,
+    econ_pyr,
+    econ_ur
+  )
 
 # descriptive stats for each dataframe
-var <- c("nbr.val", "nbr.null", "nbr.na", "min", "max", "range", "sum", "median", "mean", "SE.mean", "CI.mean.0.95", "var", "std.dev", "coef.var")
-economics.d <- cbind(var, stat.desc(economics.i))
+economics.d <- cbind(desc_var, stat.desc(economics.i))
 
 # shapiro-wilks test of normality on all estimate variables
 # will then be filtered to only include variables with a p-value < 0.05 in new df
 # must then manually check these new df to see which variables must be log transformed in next step
-economics.n <- as_tibble(do.call(rbind, lapply(economics.i, function(x) shapiro.test(x)[c("statistic", "p.value")])), rownames = "var") %>%
+economics.n <- as_tibble(do.call(rbind, lapply(economics.i, function(x) shapiro.test(x)[c("statistic", "p.value")])), rownames = "desc_var") %>%
   filter(p.value < 0.05)
-economics.n
 
 # variables that are not normally distributed to sw will be log transformed
 # variables that have a '0' value will have '0.0001' added to allow transformation
@@ -83,7 +98,11 @@ economics.l <- mutate(economics.i,
   econ_pctlwjobs = log(econ_pctlwjobs),
   econ_pctmwjobs = log(econ_pctmwjobs)
 ) %>%
-  select("SLN", "TEA", sort(names(.)))
+  select(
+    SLN,
+    TEA,
+    sort(names(.))
+  )
 
 # standardize all variables to z scores using the scale function
 # second line of function omits the "SLN", "TEA", and "AreaSqMi" columns from being transformed with the 'scale' function

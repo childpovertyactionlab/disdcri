@@ -4,7 +4,6 @@ source("toolkit.R")
 demographics <- import("CRI Demographics Buffer Data.csv")
 
 # rename variables where necessary
-colnames(demographics)
 demographics.r <- demographics %>%
   rename(
     dem_totp = tpop,
@@ -18,11 +17,13 @@ demographics.r <- demographics %>%
     dem_popse = psen,
     dem_popch = pchi
   ) %>%
-  select("TEA", "SLN", everything(.))
+  select(TEA,
+         SLN,
+         everything(.)
+         )
 
 # descriptive stats for each dataframe
-var <- c("nbr.val", "nbr.null", "nbr.na", "min", "max", "range", "sum", "median", "mean", "SE.mean", "CI.mean.0.95", "var", "std.dev", "coef.var")
-demographics.d <- cbind(var, stat.desc(demographics.r))
+demographics.d <- cbind(desc_var, stat.desc(demographics.r))
 
 # create 5 quintile bins for each indicator and input variables in the dataframe from the non-normalized/scaled data and renames columns
 demographics.q <- demographics.r %>%

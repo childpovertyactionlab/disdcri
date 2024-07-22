@@ -1,7 +1,7 @@
 source("toolkit.R")
 
 # import 2 mile buffer files for each indicator.
-community.acs <- read_csv("CRI Community Buffer Data.csv")
+community <- read_csv("CRI Community Buffer Data.csv")
 
 # rename variables where necessary
 community.r <- community %>%
@@ -49,70 +49,60 @@ community.r <- community %>%
     comm_evf = avgevf,
     comm_juvcrime = juvcrime_3
   ) %>%
-  select("TEA", "SLN", "AreaSqMi", everything(.))
+  select(
+    TEA,
+    SLN,
+    AreaSqMi,
+    everything(.)
+  )
 
 # create new indicator variables based on input variables
-community.m <- mutate(community.r,
-  comm_bbp = (comm_bb1 + comm_bb2 + comm_bb3) / comm_bb4,
-  comm_ocb = (comm_ocb1 + comm_ocb2 + comm_ocb3 + comm_ocb4 + comm_ocb5),
-  comm_ocbp = (comm_ocb / comm_oohh),
-  comm_rcb = (comm_rcb1 + comm_rcb2 + comm_rcb3 + comm_rcb4 + comm_rcb5),
-  comm_rcbp = (comm_rcb / comm_rohh),
-  comm_u18bbp = (comm_bb1 / comm_bb5),
-  comm_cctrcap = comm_cctrs / (comm_pop / 10000),
-  comm_incarpct = (comm_aduincarct / comm_adupop),
-  comm_juvcrimecap = comm_juvcrime / (comm_juvpop / 10000),
-  comm_libcap = comm_lib / (comm_pop / 10000),
-  comm_parkcap = comm_park / (comm_pop / 10000),
-  comm_evrate = comm_evf / comm_rohh
-) %>%
+community.m <- community.r %>%
+  mutate(
+    comm_bbp = (comm_bb1 + comm_bb2 + comm_bb3) / comm_bb4,
+    comm_ocb = (comm_ocb1 + comm_ocb2 + comm_ocb3 + comm_ocb4 + comm_ocb5),
+    comm_ocbp = (comm_ocb / comm_oohh),
+    comm_rcb = (comm_rcb1 + comm_rcb2 + comm_rcb3 + comm_rcb4 + comm_rcb5),
+    comm_rcbp = (comm_rcb / comm_rohh),
+    comm_u18bbp = (comm_bb1 / comm_bb5),
+    comm_cctrcap = comm_cctrs / (comm_pop / 10000),
+    comm_incarpct = (comm_aduincarct / comm_adupop),
+    comm_juvcrimecap = comm_juvcrime / (comm_juvpop / 10000),
+    comm_libcap = comm_lib / (comm_pop / 10000),
+    comm_parkcap = comm_park / (comm_pop / 10000),
+    comm_evrate = comm_evf / comm_rohh
+  ) %>%
   select(
-    "TEA", "SLN", everything(.),
+    TEA, SLN, everything(.),
     -(comm_ocb1:comm_bb5),
     -(comm_rv1:comm_bv5),
-    -("AreaSqMi")
+    -(AreaSqMi)
   )
 
 # new dataframe only containing indicator variables which need to be summarized
-community.i <- select(
-  community.m,
-  "TEA",
-  "SLN",
-  "comm_bbp",
-  "comm_bvp",
-  "comm_cctrcap",
-  "comm_incarpct",
-  "comm_juvcrimecap",
-  "comm_libcap",
-  "comm_ltbvp",
-  "comm_ltrvp",
-  "comm_ocb",
-  "comm_ocbp",
-  "comm_parkcap",
-  "comm_rcb",
-  "comm_rcbp",
-  "comm_rvp",
-  "comm_u18bbp",
-  "comm_evrate"
-)
+community.i <- community.m %>%
+  select(
+    TEA,
+    SLN,
+    comm_bbp,
+    comm_bvp,
+    comm_cctrcap,
+    comm_incarpct,
+    comm_juvcrimecap,
+    comm_libcap,
+    comm_ltbvp,
+    comm_ltrvp,
+    comm_ocb,
+    comm_ocbp,
+    comm_parkcap,
+    comm_rcb,
+    comm_rcbp,
+    comm_rvp,
+    comm_u18bbp,
+    comm_evrate
+  )
 
-# descriptive stats for each dataframe
-var <- c("nbr.val",
-         "nbr.null",
-         "nbr.na",
-         "min",
-         "max",
-         "range",
-         "sum",
-         "median",
-         "mean",
-         "SE.mean",
-         "CI.mean.0.95",
-         "var",
-         "std.dev",
-         "coef.var")
-
-community.d <- cbind(var, stat.desc(community.i))
+community.d <- cbind(desc_var, stat.desc(community.i))
 
 # shapiro-wilks test of normality on all estimate variables
 # filtered to only include variables with a p-value < 0.05 in new df
@@ -122,7 +112,7 @@ community.n <- as_tibble(
     rbind,
     lapply(community.i, function(x) shapiro.test(x)[c("statistic", "p.value")])
   ),
-  rownames = "var"
+  rownames = "desc_var"
 ) %>%
   filter(p.value < 0.05)
 
@@ -151,9 +141,8 @@ community.l <- mutate(community.i,
   comm_evrate = log(comm_evrate) * (-1)
 ) %>%
   select("SLN", "TEA", sort(names(.))) %>%
-
-# standardize all variables to z scores using the scale function
-# omits SLN, TEA, and AreaSqMi
+  # standardize all variables to z scores using the scale function
+  # omits SLN, TEA, and AreaSqMi
   mutate_at(c(3:18), funs(c(scale(.)))) %>%
   rename_all(funs(str_replace(., "comm_", "ci_")))
 

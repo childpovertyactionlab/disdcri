@@ -7,10 +7,7 @@ hel_cityofdall <- cri_get_acs(
   variables = hel_variables,
   year = 2018
 ) %>%
-  filter(GEOID == 4819000) %>%
-  mutate(
-    GEOTYPE = "PLACE"
-  )
+  filter(GEOID == 4819000)
 
 # Dallas County 5 Year ACS Family Variables
 hel_dallcounty <- cri_get_acs(
@@ -20,16 +17,10 @@ hel_dallcounty <- cri_get_acs(
 )
 
 # North Texas Counties 5 Year ACS Family Variables
-hel_ntxcountiesTs <- cri_get_acs(
-  geography = "tract",
-  variables = hel_variables,
-  county = counties, year = 2018,
-)
-
-hel_ntxcountiesCs <- cri_get_acs(
-  geography = "county",
-  variables = hel_variables,
-  county = counties, year = 2018,
+hel_ntxcounties <- list_rbind(
+  map(c("tract", "county"),
+      cri_get_acs,
+      year = 2018, variables = hel_variables, county = counties)
 )
 
 # Dallas/Ft. Worth MSA 5 Year ACS Family Variables
